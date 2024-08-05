@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TodoApp.iml" filepath="$PROJECT_DIR$/TodoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2026727513/TodoApp.ScoulaCli.iml" filepath="$PROJECT_DIR$/.idea/modules/2026727513/TodoApp.ScoulaCli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2026727513/TodoApp.ScoulaCli.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2026727513/TodoApp.ScoulaCli.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2026727513/TodoApp.ScoulaCli.test.iml" filepath="$PROJECT_DIR$/.idea/modules/2026727513/TodoApp.ScoulaCli.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TodoApp.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TodoApp.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TodoApp.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TodoApp.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.scoula.TodoApp.iml" filepath="$PROJECT_DIR$/.idea/modules/org.scoula.TodoApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring.iml" filepath="$PROJECT_DIR$/.idea/spring.iml" />
+    </modules>
+  </component>
+</project>

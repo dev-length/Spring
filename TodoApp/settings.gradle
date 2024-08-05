@@ -1,0 +1,3 @@
+rootProject.name = 'TodoApp'
+include ':ScoulaCli'
+project(':ScoulaCli').projectDir = new File('C:/kb_fullstack/java/ScoulaLib/scoulacli')
