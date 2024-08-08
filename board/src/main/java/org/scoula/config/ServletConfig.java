@@ -14,7 +14,7 @@ import org.springframework.web.servlet.view.JstlView;
 //@EnableWebMvc : mvc 패턴(frontcontroller 패턴) 사용하겠다
 @EnableWebMvc
 //controller 패키지 내부에서 컴포넌트를 찾아라
-@ComponentScan(basePackages = {"org.scoula.exception", "org.scoula.controller"})
+@ComponentScan(basePackages = {"org.scoula.exception", "org.scoula.controller", "org.scoula.board.controller"})
 public class ServletConfig implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {

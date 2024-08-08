@@ -21,8 +21,8 @@ class BoardMapperTest {
 
     @Test
     @DisplayName("BoardMapper의 목록 불러오기")
-    public <BoardVO> void getList() {
-        for(org.scoula.board.domain.BoardVO board : mapper.getList()) {
+    public <BoardBO> void getList(){
+        for(BoardVO board : mapper.getList()){
             log.info(board);
         }
     }
@@ -42,7 +42,27 @@ class BoardMapperTest {
         board.setTitle("새로작성하는글");
         board.setContent("새로작성하는내용");
         board.setWriter("user0");
+
         mapper.create(board);
+
         log.info(board);
+    }
+
+    @Test
+    @DisplayName("BoardMapper의 글 수정")
+    public void update() {
+        BoardVO board = new BoardVO();
+        board.setNo(5L);
+        board.setTitle("수정된 제목");
+        board.setContent("수정된 내용");
+        board.setWriter("user00");
+        int count = mapper.update(board);
+        log.info("UPDATE COUNT: " + count);
+    }
+
+    @Test
+    @DisplayName("BoardMapper의글삭제")
+    public void delete() {
+        log.info("DELETE COUNT: " + mapper.delete(3L));
     }
 }
