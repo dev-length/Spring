@@ -16,7 +16,6 @@
 <div class="text-end">
   <c:forEach var="file" items="${board.attaches}">
     <div class="attach-file-item">
-      파일다운로드링크
       <a href="/board/download/${file.no}" class="file-link">
         <i class="fa-solid fa-floppy-disk"></i>
         ${file.filename} (${file.fileSize})<br>
