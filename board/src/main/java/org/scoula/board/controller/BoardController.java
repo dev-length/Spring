@@ -62,6 +62,6 @@ public class BoardController {
     public void download(@PathVariable("no") Long no, HttpServletResponse response) throws Exception {
         BoardAttachmentVO attach = service.getAttachment(no);
         File file= new File(attach.getPath());
-        aUploadFiles.download(response, file, attach.getFilename());
+        UploadFiles.download(response, file, attach.getFilename());
     }
 }
