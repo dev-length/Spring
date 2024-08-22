@@ -5,8 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.AuthenticationException;
 
-import javax.naming.AuthenticationException;
+
 import javax.servlet.http.HttpServletRequest;
 
 @NoArgsConstructor
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 public class LoginDTO {
     private String username;
     private String password;
+
     public static LoginDTO of(HttpServletRequest request) throws AuthenticationException {
         ObjectMapper om = new ObjectMapper();
         try {
